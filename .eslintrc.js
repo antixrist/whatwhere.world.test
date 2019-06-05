@@ -13,6 +13,15 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-cjs-in-config': 'off'
+    semi: [2, 'always'],
+    'comma-dangle': [2, {
+      arrays: 'only-multiline',
+      objects: 'only-multiline',
+      imports: 'only-multiline',
+      exports: 'only-multiline',
+      functions: 'only-multiline',
+    }],
+    'nuxt/no-cjs-in-config': 0,
+    'vue/name-property-casing': [2, 'kebab-case'],
   }
-}
+};

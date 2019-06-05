@@ -1,22 +1,25 @@
-# whatwhere.world.test
+Тестовое задание для Vue разработчика. Список городов
+----
+Описание задачи
+----
+Реализовать страницу для работы со списком городов: отображение, пагинация, добавление, удаление. 
 
-> My sensational Nuxt.js project
+Каждый городо должен обладать следующими данными:
+ - Имя
+ - Температура воздуха
+ - Скорости и направлении ветра
+ - Давление
 
-## Build Setup
+Необходимый функционал: 
+ - Вывод списка городов с пагинаций по 2 записи на странице
+ - Удаление любого города
+ - Добавление нового города
+ - Отображение общего числа городов
 
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+Требования к решению:
+----
+ - Nuxt.js версии 2
+ - Сделать data.json из 6 городов с заполненными данными
+ - При первой загрузки, перед рендерингом страницы - записать данные из data.json во Vuex и в дальнейшем работать через Vuex
+ - Дизайн не имеет значения
+ - результат решения залить на github и прислать ссылку на репозиторий на r.frolov@whatwhere.world
