@@ -35,7 +35,7 @@
         <tbody>
           <tr
             v-for="(city, idx) in visibleCities"
-            :key="idx + city"
+            :key="city.name"
           >
             <td>{{ startVisibleIdx + idx + 1 }}.</td>
             <td>{{ city.name }}</td>
